@@ -25,3 +25,8 @@ The code allows the following:
 - [User](https://developer.twitter.com/en/docs/twitter-api/data-dictionary/object-model/user): 
   - id (default). string. The unique identifier of this user.
   - location. string. The location specified in the user's profile, if the user provided one. As this is a freeform value, it may not indicate a valid location, but it may be fuzzily evaluated when performing searches with location queries.
+- Extra:
+  - Mentions: extracts mentions following the @ sign.
+  - Hashtags: extracts hashtags following the # sign.
+  - URLs: extracts URLs
+  - Sentiment: using TextBlob it gives you a prediction of the tweet's sentiment.
